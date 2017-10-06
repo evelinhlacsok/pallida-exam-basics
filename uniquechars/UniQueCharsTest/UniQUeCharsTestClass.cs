@@ -34,5 +34,21 @@ namespace UniQueCharsTest
             bool result = true;
             Assert.AreEqual(result, myOriginal.UniqueCharacters(input));
         }
+        
+        [Test]
+        public void UpperOrSmaller()
+        {
+            string input = "SuccuLents";
+            bool result = true;
+            Assert.AreEqual(result, myOriginal.UniqueCharacters(input));
+        }
+
+        [Test]
+        public void StringWithSpaces()
+        {
+            string input = "su ccu le nts";
+            bool result = true;
+            Assert.AreEqual(result, myOriginal.UniqueCharacters(input));
+        }
     }
 }
