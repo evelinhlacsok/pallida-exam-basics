@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace FavouriteAnimals
 {
@@ -28,7 +29,7 @@ namespace FavouriteAnimals
             }
             catch (Exception)
             {
-                Console.WriteLine("Uh-no, no doggos found");
+                Console.WriteLine("Uh-no, could not read the file");
             }
             Console.ReadLine();
         }
@@ -40,14 +41,14 @@ namespace FavouriteAnimals
             {
                 string[] content = File.ReadAllLines(path);
                 int raccoonCounter = 0;
-                if (content.Contains("dog"))
+                if (content.Contains("raccoon"))
                 {
                     raccoonCounter++;
                 }
             }
             catch (Exception)
             {
-                Console.WriteLine("Uh-no, no raccoons found");
+                Console.WriteLine("Uh-no, could not read the file");
             }
             Console.ReadLine();
         }
