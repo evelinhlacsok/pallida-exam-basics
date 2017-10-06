@@ -10,7 +10,8 @@ namespace TakeMeToThe
     {
         public Lollipop(double sugar)
         {
-            this.sugar = sugar;
+            price = 10;
+            sugar = 5;
         }
     }
 }

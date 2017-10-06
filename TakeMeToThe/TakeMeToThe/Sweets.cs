@@ -9,5 +9,7 @@ namespace TakeMeToThe
     class Sweets
     {
         public double sugar;
+        public double price;
+        public double priceRaisePercentage;
     }
 }

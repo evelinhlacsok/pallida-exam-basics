@@ -8,5 +8,11 @@ namespace TakeMeToThe
 {
     class CandyShop
     {
+        List<Sweets> CandyShopsStorage = new List<Sweets>();
+
+        public void CreateSweets(Sweets sweets)
+        {
+            sweets.CreateSweets(sweets);
+        }
     }
 }
