@@ -17,12 +17,21 @@ namespace UniqueChars
             // "n", "g", "r", "m"
 
             string input = "succulents";
-            UniqueCharacters(input);
+            Console.WriteLine(UniqueCharacters(input));
+            Console.ReadLine();
         }
 
         private static List<char> UniqueCharacters(string input)
         {
-            
+            List<char> letters = new List<char>(input);
+            foreach (var letter in letters)
+            {
+                if (! letters.Contains(letter))
+                {
+                    letters.Add(letter);
+                }
+            }
+            return letters;
         }
     }
 }
