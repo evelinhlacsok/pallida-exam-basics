@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UniqueChars
 {
-    class UniqueCharsClass
+    public class UniqueCharsClass
     {
         static void Main(string[] args)
         {
@@ -21,7 +21,7 @@ namespace UniqueChars
             Console.ReadLine();
         }
 
-        private static List<char> UniqueCharacters(string input)
+        public static List<char> UniqueCharacters(string input)
         {
             List<char> letters = new List<char>(input);
             foreach (var letter in letters)

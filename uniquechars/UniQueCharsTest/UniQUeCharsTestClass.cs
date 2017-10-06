@@ -5,13 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UniQueCharsTest;
+using UniqueChars;
+
 
 namespace UniQueCharsTest
 {
     [TestFixture]
     class UniQUeCharsTestClass
     {
-        UniqueCharsClass myOriginal = new UniqueCharsClass();
+        public UniqueCharsClass myOriginal = new UniqueCharsClass();
 
         static void Main(string[] args)
         {
@@ -20,8 +22,17 @@ namespace UniQueCharsTest
         [Test]
         public void EmptyString()
         {
-            string input = string.Empty;
-            Assert.False(UniqueCharacters
+            string input = "";
+            bool result = false;
+            Assert.AreEqual(result, myOriginal.UniqueCharacters(input));
+        }
+
+        [Test]
+        public void NotEmptyString()
+        {
+            string input = "cactus";
+            bool result = true;
+            Assert.AreEqual(result, myOriginal.UniqueCharacters(input));
         }
     }
 }
