@@ -11,6 +11,12 @@ namespace FavouriteAnimals
         public void PrintUsage()
         {
             Console.WriteLine("```C# FavouriteAnimals [animal] [animal]```");
+            Console.ReadLine();
+        }
+
+        public void DogCounter()
+        {
+
         }
     }
 }
