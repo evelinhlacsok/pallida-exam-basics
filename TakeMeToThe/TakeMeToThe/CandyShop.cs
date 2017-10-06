@@ -15,11 +15,27 @@ namespace TakeMeToThe
         {
             this.sugarAmount = sugarAmount;
         }
+
         List<Sweets> CandyShopsStorage = new List<Sweets>();
 
         public void CreateSweets(Sweets sweets)
         {
             CandyShopsStorage.Add(sweets);
+        }
+
+        public void SweetsCreater()
+        {
+            sugarAmount -= sweets.sugarNeed;
+        }
+
+        public void Raise(double percentage)
+        {
+            sweets.price *= percentage / 100;
+        }
+
+        public void Sell()
+        {
+
         }
     }
 }

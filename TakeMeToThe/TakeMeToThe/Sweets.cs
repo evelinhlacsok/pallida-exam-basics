@@ -11,5 +11,10 @@ namespace TakeMeToThe
         public double sugar;
         public double price;
         public double priceRaisePercentage;
+
+        public void SugarNeed()
+        {
+            candies.sugar += lollipop.sugar;
+        }
     }
 }

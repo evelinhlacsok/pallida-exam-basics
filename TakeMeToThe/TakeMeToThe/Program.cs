@@ -30,11 +30,18 @@ namespace TakeMeToThe
             // The CandyShop should print properties represented as string in this format:
             // "Inventory: 3 candies, 2 lollipops, Income: 100, Sugar: 400gr"
             CandyShop candyShop = new CandyShop(300);
+            Lollipop lollipop1 = new Lollipop(20);
+            Candies candy1 = new Candies(5);
+
+            candyShop.CreateSweets(lollipop1);
+            candyShop.CreateSweets(candy1);
+
             candyShop.CreateSweets(CandyShop.CANDY);
             candyShop.CreateSweets(CandyShop.CANDY);
             candyShop.CreateSweets(CandyShop.LOLLIPOP);
             candyShop.CreateSweets(CandyShop.LOLLIPOP);
-            candyShop.PrintInfo();
+            Console.WriteLine(candyShop);
+            //candyShop.PrintInfo();
             // Should print out:
             // Invetory: 2 candies, 2 lollipops, Income: 0$, Sugar: 270gr
             candyShop.Sell(CandyShop.CANDY, 1);

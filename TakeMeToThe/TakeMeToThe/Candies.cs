@@ -10,8 +10,8 @@ namespace TakeMeToThe
     {
         public Candies(double sugar)
         {
-            price = 20;
-            sugar = 10;
+            this.price = 20;
+            this.sugar = 10;
         }
     }
 }
