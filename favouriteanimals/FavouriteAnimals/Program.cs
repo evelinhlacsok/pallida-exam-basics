@@ -28,21 +28,11 @@ namespace FavouriteAnimals
             }
             else if (args.Contains("dog"))
             {
-                string path = @"../../favourites.txt";
-                try
-                {
-                    string[] content = File.ReadAllLines(path);
-                    int dogCounter = 0;
-                    if (content.Contains("dog"))
-                    {
-                        dogCounter++;
-                    }
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("Uh-no, no doggos found");
-                }
-                Console.ReadLine();
+                favourites.DogCounter();
+            }
+            else if (args.Contains("raccoon"))
+            {
+                favourites.RaccoonCounter();
             }
         }
     }
