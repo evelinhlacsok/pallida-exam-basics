@@ -32,8 +32,16 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+
+If a function is a part of a class, it's called a method.
+
+In C#, we do not have functions that are declared ouside of classes, that is why all functions in this language are methods. 
+
+A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method. The Main method is the entry point for every C# application, that is the part, when the program is started.
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+When a class or struct is created, its constructor is called. 
+The constructor is a special method of a class, that let's us to instantiate that class. They have the same name as the class or the struct. 
+Every class has a default constructor, but we can create more specific ones, that takes in parameters.
+Constructors have the same name as the class or struct and they usually initialize the data members of the new object.
