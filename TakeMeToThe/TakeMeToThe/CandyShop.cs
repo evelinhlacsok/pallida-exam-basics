@@ -8,11 +8,18 @@ namespace TakeMeToThe
 {
     class CandyShop
     {
+        public double sugarAmount;
+        public int money;
+
+        public CandyShop(double sugarAmount)
+        {
+            this.sugarAmount = sugarAmount;
+        }
         List<Sweets> CandyShopsStorage = new List<Sweets>();
 
         public void CreateSweets(Sweets sweets)
         {
-            sweets.CreateSweets(sweets);
+            CandyShopsStorage.Add(sweets);
         }
     }
 }
